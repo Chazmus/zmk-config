@@ -13,7 +13,7 @@
         compatible = "zmk,combos";
 
         both-shift-caps {
-            bindings = <&kp CLCK>;
+            bindings = <&kp CAPS>;
             key-positions = <36 49>;
         };
     };

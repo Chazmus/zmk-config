@@ -27,7 +27,7 @@
 &kp TAB           &kp Q   &kp W   &kp E     &kp R     &kp T                            &kp Y   &kp U      &kp I      &kp O    &kp P     &kp MINUS
 &kp LEFT_CONTROL  &kp A   &kp S   &kp D     &kp F     &kp G                            &kp H   &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LEFT_SHIFT    &kp Z   &kp X   &kp C     &kp V     &kp B   &kp LBKT      &kp RBKT   &kp N   &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                                  &kp LALT  &kp LGUI  &to 1   &kp RETURN    &kp SPACE  &to 2   &kp EQUAL  &kp GRAVE
+                                  &kp LALT  &kp LGUI  &mo 1   &kp RETURN    &kp SPACE  &mo 2   &kp EQUAL  &kp GRAVE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -35,11 +35,11 @@
 
         lower_layer {
             bindings = <
-&kp F1           &kp F2  &kp F3           &kp F4           &kp F5           &kp F6                                  &kp F7     &kp F8    &kp F9  &kp F10    &kp F11   &kp F12
-&kp PRINTSCREEN  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMLOCK                          &trans     &trans    &trans  &trans     &kp HOME  &kp PAGE_UP
-&kp CAPS         &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans                                  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT  &kp END   &kp PAGE_DOWN
-&trans           &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BACKSLASH   &kp MINUS    &kp EQUAL  &kp SLASH  &trans    &trans  &trans     &trans    &trans
-                                          &trans           &kp KP_NUMBER_0  &to 0           &trans       &trans     &to 0      &trans    &trans
+&kp F1           &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                                  &kp F7     &kp F8    &kp F9  &kp F10    &kp F11   &kp F12
+&kp PRINTSCREEN  &trans  &trans  &trans  &trans  &kp KP_NUMLOCK                          &trans     &trans    &trans  &trans     &kp HOME  &kp PAGE_UP
+&trans           &trans  &trans  &trans  &trans  &trans                                  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT  &kp END   &kp PAGE_DOWN
+&trans           &trans  &trans  &trans  &trans  &kp BACKSLASH   &kp MINUS    &kp EQUAL  &kp SLASH  &trans    &trans  &trans     &trans    &trans
+                                 &trans  &trans  &trans          &trans       &trans     &trans     &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -47,11 +47,11 @@
 
         raise_layer {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans    &trans    &trans  &trans     &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans                          &trans    &trans    &trans  &trans     &trans  &trans
-&kp LCTRL   &trans        &trans        &trans        &trans        &trans                          &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans    &trans    &trans  &trans     &trans  &trans
-                                        &kp LALT      &kp LG(LGUI)  &to 0         &trans    &trans  &to 3     &trans    &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans                          &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans                          &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
+                                        &trans        &trans        &trans        &trans    &trans  &trans  &kp N0  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;

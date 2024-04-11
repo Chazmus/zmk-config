@@ -33,17 +33,15 @@
 &kp LEFT_CONTROL  &kp Z            &kp X            &kp C         &kp V              &kp B   &kp LBKT      &kp RBKT   &kp N   &kp M               &kp COMMA     &kp DOT          &kp FSLH                  &mt RIGHT_SHIFT CAPS
                                                     &kp LALT      &kp LGUI           &mo 1   &kp RETURN    &kp SPACE  &mo 2   &kp EQUAL           &kp GRAVE
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {
             bindings = <
-&kp F1           &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                                 &kp F7     &kp F8    &kp F9  &kp F10    &kp F11   &kp F12
-&kp PRINTSCREEN  &trans  &trans  &trans  &trans  &trans                                 &trans     &trans    &trans  &trans     &kp HOME  &kp PAGE_UP
-&trans           &trans  &trans  &trans  &trans  &trans                                 &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT  &kp END   &kp PAGE_DOWN
-&trans           &trans  &trans  &trans  &trans  &kp BACKSLASH  &kp MINUS    &kp EQUAL  &kp SLASH  &trans    &trans  &trans     &kp INS   &kp DEL
-                                 &trans  &trans  &trans         &trans       &trans     &to 4      &trans    &trans
+&kp F1           &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                    &kp F7     &kp F8     &kp F9         &kp F10    &kp F11   &kp F12
+&kp PRINTSCREEN  &trans  &trans  &trans  &trans  &trans                    &trans     &trans     &trans         &trans     &kp HOME  &kp PAGE_UP
+&trans           &trans  &trans  &trans  &trans  &trans                    &kp LEFT   &kp DOWN   &kp UP         &kp RIGHT  &kp END   &kp PAGE_DOWN
+&trans           &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp GRAVE  &kp EQUAL  &kp BACKSLASH  &trans     &kp INS   &kp DEL
+                                 &trans  &trans  &trans  &trans    &trans  &to 4      &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
